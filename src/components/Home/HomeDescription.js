@@ -3,13 +3,13 @@ import styled from 'styled-components';
 
 const HomeDescriptionContainer = styled.div`
 position: relative;
+padding: 2rem;
 `
 
 const HomeDescriptionText = styled.p`
-font-size: 1.2rem;
-padding: 2rem;
-width: 50%;
-transform: translateX(50%);
+font-size: 1.5rem;
+padding: 2rem 7.5rem;
+width: 100%;
 font-family: 'Shadows Into Light', cursive;
 text-align: center;
 margin: 0;
