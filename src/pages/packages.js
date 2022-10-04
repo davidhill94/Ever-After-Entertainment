@@ -1,35 +1,31 @@
 import React from 'react';
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
 import { PackageItemBedtime, PackageItemPrincess, PackageItemPrincess2, PackageItemRoyal } from '../components/Package/PackageItem';
 import { PageHeaders } from '../components/PageHeaders';
-
-const animateBackground = keyframes`
-0% { background-position: 0 0; }
-50% { background-position: 100% 100%; }
-100% { background-position: 0 0; }
-`
 
 const PackagesContainer = styled.div`
 display: flex;
 flex-direction: column;
 width: 100%;
-background: url(${require(`../images/stars.png`)}) repeat-y;
-background-size: 100% auto;
+padding: 1rem 0 0 0;
+background: url(${require(`../images/stars.png`)});
+-webkit-background-size: auto 100%;
+-moz-background-size: auto 100%;
+-o-background-size: auto 100%;
+background-size: auto 100%;
+background-position: center;
 `
 
 const PackagesInfo = styled.p`
 font-size: 1rem;
 text-align: center;
-margin: 0 5rem 1rem 5rem;
+margin: 0;
 font-family: 'Montserrat', sans-serif;
-box-shadow: -2px 2px 10px 0px var(--primary);
--webkit-box-shadow: -2px 2px 10px 0px var(--primary);
--moz-box-shadow: -2px 2px 10px 0px var(--primary);
-padding: 2rem;
-background-color: #fff;
+padding: 2rem 5rem;
+background-color: var(--primary-opaque);
 `
 
-const packages = (title) => {
+const packages = () => {
     return (
         <PackagesContainer>
             <PageHeaders title={"Packages"}/>

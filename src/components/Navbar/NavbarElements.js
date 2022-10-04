@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { NavLink } from 'react-router-dom'; 
 
 export const Nav = styled.nav`
-background-color: transparent;
+background-color: #fff;
 height: ${({ thin }) => (thin ? '80px' : '180px')};
 display: flex;
 justify-content: center;
@@ -33,6 +33,7 @@ max-width: 1100px;
     align-items: start;
  }
 `
+
 export const  NavLogoWrapper = styled(NavLink)`
 cursor: pointer;
 display: block;
@@ -54,9 +55,8 @@ display: none;
 @media screen and (max-width: 768px) {
     display: block;
     position: absolute;
-    top: 0;
-    right: 0;
-    margin: 24px;
+    top: 1rem;
+    right: 1rem;
     font-size: 1.8rem;
     cursor: pointer;
     color: var(--primary);
@@ -79,7 +79,7 @@ margin: 0rem 1rem 1.5rem 1rem;
 
 export const NavItem = styled.li`
 height: auto;
-font-size: 1rem;
+font-size: 1.2rem;
 `
 
 export const NavLinks = styled(NavLink)`

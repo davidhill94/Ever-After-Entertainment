@@ -7,15 +7,9 @@ display: flex;
 align-items: center;
 justify-content: space-evenly;
 font-family: 'Shadows Into Light', cursive;
-width: 80%;
-transform: translateX(10%);
-margin: 2rem 0;
-box-shadow: -2px 2px 10px 0px var(--primary);
--webkit-box-shadow: -2px 2px 10px 0px var(--primary);
--moz-box-shadow: -2px 2px 10px 0px var(--primary);
+width: 100%;
 height: auto;
-padding: 1rem 1rem;
-background-color: #fff;
+padding: 2rem 2rem;
 
 @media screen and (max-width: 768px) {
     padding: 1rem 0;
@@ -23,8 +17,8 @@ background-color: #fff;
 `
 
 const TestimonialImage = styled.img`
-width: 30%;
-height: auto;
+width: auto;
+height: 15rem;
 object-fit: cover;
 
 @media screen and (max-width: 768px){
@@ -76,7 +70,7 @@ const TestimonialContent = () => {
     return (
         TestimonialData.map((item, index) => {
             return (
-                <TestimonialItem key={index} onLoad={handleItemLayout} itemLayout={itemLayout} style={{'flexDirection': itemLayout ? "column" : index % 2 === 1 ? 'row-reverse' : 'row'}}>
+                <TestimonialItem key={index} onLoad={handleItemLayout} itemLayout={itemLayout} style={{'flexDirection': itemLayout ? "column" : index % 2 === 1 ? 'row-reverse' : 'row', backgroundColor: index % 2 === 0 ? "var(--primary-opaque)" : '#fff'}}>
                     <TestimonialImage src={item.image}></TestimonialImage>
                     <TestimonialDetails>
                         <TestimonialInfo>

@@ -11,10 +11,23 @@ display: flex;
 flex-direction: column;
 align-items: start;
 justify-content: center;
-width: 80%;
-padding: 1rem;
-transform: translateX(10%);
+width: 100%;
+padding: 1rem 3rem;
 font-family: 'Montserrat', sans-serif;
+position: relative;
+
+@media screen and (max-width: 768px){
+    align-items: center;
+}
+`
+
+const StaffBackground = styled.div`
+position: absolute;
+top: 0;
+left: 0;
+height: 100%;
+width: 100%;
+opacity: 0.3;
 `
 
 const StaffTitle = styled.h2`
@@ -23,21 +36,25 @@ margin: 0.5rem;
 `
 
 const Line = styled.p`
-width: 400px;
+width: 30%;
 height: 2px;
 background-color: var(--primary);
 
-@media screen and (max-width: 500px){
-    width: 260px;
+@media screen and (max-width: 768px){
+    width: 50%;
+}
+@media screen and (max-width: 450px){
+    width: 80%;
 }
 `
 
-const StaffRow = styled.div`
+const StaffWrapper = styled.div`
 display: flex;
 margin: 1rem 0.5rem;
 width: 100%;
 justify-content: center;
 align-items: center;
+flex-wrap: wrap;
 
 @media screen and (max-width: 768px){
     flex-direction: column;
@@ -55,11 +72,14 @@ margin: 2rem;
 const StaffImage = styled.img`
 height: 250px;
 width: auto;
+
+@media screen and (max-width: 425px) {
+    height: 150px;
+}
 `
 
 const StaffName = styled.h3`
 font-size: 1.2rem;
-color: var(--primary);
 margin-top: 0.5rem;
 
 @media screen and (max-width: 768px){
@@ -70,9 +90,10 @@ margin-top: 0.5rem;
 const Staff = () => {
   return (
     <StaffContainer>
+        <StaffBackground />
         <StaffTitle>Staff</StaffTitle>
         <Line></Line>
-        <StaffRow>
+        <StaffWrapper>
             <StaffItem>
                 <StaffImage src={EK} alt="Emely Keane, Staff"></StaffImage>
                 <StaffName>Emely Keane</StaffName>
@@ -85,8 +106,6 @@ const Staff = () => {
                 <StaffImage src={HB} alt="Hayley Banfield, Staff"></StaffImage>
                 <StaffName>Hayley Banfield</StaffName>
             </StaffItem>
-        </StaffRow>
-        <StaffRow>
             <StaffItem>
                 <StaffImage src={MC} alt="Megan Clutterbuck, Staff"></StaffImage>
                 <StaffName>Megan Clutterbuck</StaffName>
@@ -95,7 +114,7 @@ const Staff = () => {
                 <StaffImage src={EW} alt="Emma Wighton, Staff"></StaffImage>
                 <StaffName>Emma Wighton</StaffName>
             </StaffItem>
-        </StaffRow>
+        </StaffWrapper>
     </StaffContainer>
   )
 }

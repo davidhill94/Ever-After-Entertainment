@@ -7,8 +7,6 @@ import Princesses from './pages/princesses';
 import Bookings from './pages/bookings';
 import Gallery from './pages/gallery';
 import Testimonial from './pages/testimonials';
-import ChristmasEvents from './pages/christmasEvents';
-import RoyalAnnouncements from './pages/royalAnnouncements';
 import React, {useState} from 'react';
 import Sidebar from './components/Sidebar/Sidebar';
 import Navbar from './components/Navbar/Navbar';
@@ -32,8 +30,6 @@ function App() {
         <Route path="/bookings" element={<Bookings />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/testimonials" element={<Testimonial />} />
-        <Route path="/christmas-events" element={<ChristmasEvents />} />
-        <Route path="/royal-announcements" element={<RoyalAnnouncements />} />
       </Routes>
       <Footer />
     </BrowserRouter>

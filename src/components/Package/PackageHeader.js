@@ -64,7 +64,7 @@ export const PackageHeaderBedtime = () => {
             <Line></Line>
             <PackageHeaderText>Package</PackageHeaderText>
         </PackageHeaderBox>
-        <PackageHeaderCircle><FaBookOpen /></PackageHeaderCircle>
+        <PackageHeaderCircle><FaBookOpen/></PackageHeaderCircle>
     </PackageHeaderContainer>
   )
 }
@@ -77,7 +77,7 @@ export const PackageHeaderPrincess = () => {
             <Line></Line>
             <PackageHeaderText>Package</PackageHeaderText>
         </PackageHeaderBox>
-        <PackageHeaderCircle><FaRegStar /></PackageHeaderCircle>
+        <PackageHeaderCircle><FaRegStar/></PackageHeaderCircle>
     </PackageHeaderContainer>
   )
 }

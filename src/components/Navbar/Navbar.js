@@ -9,7 +9,7 @@ import {
     MobileIcon, 
     NavMenu, 
     NavItem, 
-    NavLinks 
+    NavLinks
 } from './NavbarElements';
 
 const Navbar = ({toggle}) => {
@@ -72,18 +72,6 @@ const Navbar = ({toggle}) => {
                     to="testimonials" 
                     activeClass='active'
                     >Testimonials</NavLinks>
-                </NavItem>
-                <NavItem>
-                    <NavLinks 
-                    to="christmas-events" 
-                    activeClass='active'
-                    >Christmas Events</NavLinks>
-                </NavItem>
-                <NavItem>
-                    <NavLinks 
-                    to="royal-announcements" 
-                    activeClass='active'
-                    >Royal Announcements</NavLinks>
                 </NavItem>
             </NavMenu>
         </NavbarContainer>

@@ -7,10 +7,17 @@ display: flex;
 flex-direction: column;
 align-items: start;
 justify-content: center;
-width: 80%;
-padding: 1rem;
-transform: translateX(10%);
+width: 100%;
+padding: 1rem 3rem;
 font-family: 'Montserrat', sans-serif;
+
+@media screen and (max-width: 768px){
+    align-items: center;
+}
+
+@media screen and (max-width: 425px) {
+    padding: 0;
+}
 `
 
 const DirectorTitle = styled.h2`
@@ -25,7 +32,6 @@ margin: 0.5rem;
 const DirectorName = styled.h3`
 font-size: 1.2rem;
 margin: 1rem 0.5rem;
-color: var(--primary);
 
 @media screen and (max-width: 768px){
     font-size: 1rem;
@@ -39,7 +45,7 @@ background-color: rgba(7, 162, 190, 0.2);
 
 @media screen and (max-width: 768px){
     flex-direction: column;
-    background-color: #fff;
+    background-color: transparent;
 }
 `
 
@@ -61,15 +67,22 @@ margin: 1rem;
     background-color: rgba(7, 162, 190, 0.2);
     padding: 2rem;
 }
+
+@media screen and (max-width: 425px) {
+    margin: 1rem 0;
+}
 `
 
 const Line = styled.p`
-width: 400px;
+width: 30%;
 height: 2px;
 background-color: var(--primary);
 
-@media screen and (max-width: 500px){
-    width: 260px;
+@media screen and (max-width: 768px){
+    width: 50%;
+}
+@media screen and (max-width: 450px){
+    width: 80%;
 }
 `
 

@@ -38,12 +38,6 @@ const Sidebar = ({ isOpen, toggle}) => {
                     <SidebarLink
                         to="testimonials"
                         onClick={toggle}>Testimonials</SidebarLink>
-                        <SidebarLink
-                        to="christmas-events"
-                        onClick={toggle}>Christmas Events</SidebarLink>
-                        <SidebarLink
-                        to="royal-announcements"
-                        onClick={toggle}>Royal Announcements</SidebarLink>
                         <Social />
                     <SidebarLogoWrapper to="/" onClick={toggle}>
                         <SidebarLogo src={logo} alt="logo"></SidebarLogo>

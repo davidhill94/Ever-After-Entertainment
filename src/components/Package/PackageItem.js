@@ -10,7 +10,7 @@ import royal from '../../images/royal.jpg';
 const PackageItemOuterContainer = styled.div`
 display: flex;
 flex-direction: column;
-padding: 2rem;
+padding: 4rem 2rem;
 justify-content: center;
 align-items: center;
 `
@@ -35,7 +35,7 @@ border-radius: 10px;
 
 export const PackageItemBedtime = () => {
     return (
-        <PackageItemOuterContainer>
+        <PackageItemOuterContainer style={{backgroundColor: "var(--primary-opaque)"}}>
             <PackageItemInnerContainer>
                 <PackageHeaderBedtime />
                 <PackageImage src={bedtime} alt="bedtime image"></PackageImage>
@@ -57,7 +57,7 @@ export const PackageItemPrincess = () => {
 }
 export const PackageItemPrincess2 = () => {
     return (
-        <PackageItemOuterContainer>
+        <PackageItemOuterContainer style={{backgroundColor: "var(--primary-opaque)"}}>
             <PackageItemInnerContainer>
             <PackageHeaderPrincess2 />
             <PackageImage src={princess2} alt="Princess for the day"></PackageImage>

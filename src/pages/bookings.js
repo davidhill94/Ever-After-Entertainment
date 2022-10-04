@@ -12,6 +12,12 @@ flex-direction: column;
 width: 100%
 align-items: center;
 justify-content: center;
+background: url(${require(`../images/stars.png`)});
+-webkit-background-size: auto 100%;
+-moz-background-size: auto 100%;
+-o-background-size: auto 100%;
+background-size: auto 100%;
+background-position: center;
 `
 
 const BookingsContainer = styled.div`
@@ -19,8 +25,6 @@ display: flex;
 align-items: start;
 justify-content: center;
 width: 100%;
-background: url(${require(`../images/stars.png`)}) repeat-y;
-background-size: 100% auto;
 
 @media screen and (max-width: 768px){
   flex-direction: column;

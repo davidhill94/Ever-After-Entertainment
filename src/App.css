@@ -3,4 +3,5 @@
   padding: 0;
   box-sizing: border-box;
   --primary: #07A2BE;
+  --primary-opaque: rgba(7, 162, 190, 0.3);
 }

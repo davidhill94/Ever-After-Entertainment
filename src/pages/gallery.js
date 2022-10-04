@@ -6,8 +6,12 @@ import { PageHeaders } from '../components/PageHeaders';
 const GalleryContainer = styled.div`
 width: 100%;
 height: auto;
-background: url(${require(`../images/stars.png`)}) repeat-y;
-background-size: 100% auto;
+background: url(${require(`../images/stars.png`)});
+-webkit-background-size: auto 100%;
+-moz-background-size: auto 100%;
+-o-background-size: auto 100%;
+background-size: auto 100%;
+background-position: center;
 `
 
 const gallery = (title) => {

@@ -46,13 +46,16 @@ width: 100%;
 export const SidebarMenu = styled.ul`
 display: grid;
 grid-template-columns: 1fr;
-grid-template-row: repeat(8, 60px);
+grid-template-row: repeat(6, 60px);
 text-align: center;
 padding: 0;
 margin-top: 3rem;
 
 @media screen and (max-width: 768px) {
-    grid-template-rows: repeat(8, 40px);
+    grid-template-rows: repeat(6, 40px);
+}
+@media screen and (max-width: 425px) {
+    grid-template-rows: repeat(6, 60px);
 }
 `
 

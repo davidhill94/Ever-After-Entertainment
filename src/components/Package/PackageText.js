@@ -13,6 +13,7 @@ box-shadow: -2px 2px 10px 0px var(--primary);
 -webkit-box-shadow: -2px 2px 10px 0px var(--primary);
 -moz-box-shadow: -2px 2px 10px 0px var(--primary);
 margin: 1rem;
+background-color: #fff;
 
 @media screen and (max-width: 1024px){
     width: 80%;
